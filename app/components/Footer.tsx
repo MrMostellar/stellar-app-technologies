@@ -1,7 +1,4 @@
-import { BucketNotificationDestinationType } from "aws-cdk-lib/aws-s3";
 import React from "react";
-
-let paddingValue = 1;
 
 export default function Footer() {
   return (
