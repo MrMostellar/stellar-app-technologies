@@ -9,10 +9,10 @@ export default function Home() {
       </div>
 
       <div className="flex-[3] bg-green-300">
-
+        <h1>Body</h1>
       </div>
 
-      <div className="flex-1 bg-blue-300">
+      <div className="flex-1 relative bg-blue-300">
         <Footer />
       </div>
     </div>
