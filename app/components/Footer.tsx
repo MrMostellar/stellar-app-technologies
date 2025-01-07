@@ -13,7 +13,7 @@ const linkGenerator = (data: any, Component: any) => {
 export default function Footer() {
   return (
     //column of two for the UL items and the copyright
-    <div className="flex flex-col text-center absolute min-w-[100%] min-h-[100%] py-1 bg-black">
+    <>
       {/*top half of column is a row of columns*/}
       <div className="flex flex-1 flex-row p-1 bg-red-300">
         {linkGenerator(ULProps, ULBlock)}
@@ -57,6 +57,6 @@ export default function Footer() {
           <h3 className="flex-1">Link</h3>
         </div>
       </div>
-    </div>
+    </>
   );
 }
