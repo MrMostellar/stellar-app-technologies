@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { ULBlockType } from "../data/CustomizeFooterLinkData";
+import { ULBlockType } from "@/app/data/CustomizeFooterLinkData";
 
 const LIGenerator = (props: ULBlockType) => {
   const newComponent: any = props.links.map((link, key) => (

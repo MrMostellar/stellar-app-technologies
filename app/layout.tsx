@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
@@ -25,6 +25,7 @@ export default function AboutLayout({
         <div className="flex-1 flex flex-col text-center min-w-[100%] min-h-[100%]">
           <Footer />
         </div>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
       </body>
     </html>
   );

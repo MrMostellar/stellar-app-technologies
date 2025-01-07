@@ -1,5 +1,6 @@
 import FooterLinks from "./FooterLinks";
 import SingleTextForm from "../SingleTextForm";
+import SocialsBar from "../SocialsBar";
 
 export default function Footer() {
   return (
@@ -12,6 +13,10 @@ export default function Footer() {
       <div className="flex flex-1 flex-col p-1">
         <div className="flex flex-1 justify-center items-center">
           <SingleTextForm />
+        </div>
+        {/*Social Media links*/}
+        <div className="flex flex-1 flex-wrap justify-center items-center m-auto">
+          <SocialsBar />
         </div>
         {/*copyright line*/}
         <p>&copy; 2024-2025 Stellar App Technologies LLC</p>
