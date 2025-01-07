@@ -12,7 +12,7 @@ const LIGenerator = (props: ULBlockType) => {
   return newComponent;
 };
 
-export default function ULBlock(props: ULBlockType) {
+export default function FooterLinkColumn(props: ULBlockType) {
   return (
     <>
       <ul className="flex-1">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Stellar App Technologies",
@@ -15,18 +15,15 @@ export default function AboutLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {/*100% min width removes the horizontal scroll bar from blocking the content*/}
-        <div className="flex flex-col min-h-[100vh] min-w-[100%] overflow-y-auto bg-black">
-          <div className="flex flex-1 flex-col min-w-[100%] min-h-[100%] bg-red-300">
-            <Header />
-          </div>
+      <body className="flex flex-col content-stretch min-h-[100vh] min-w-[100%] overflow-auto">
+        <div className="flex flex-1 flex-col min-w-[100%] min-h-[100%] bg-red-300">
+          <Header />
+        </div>
 
-          <main className="flex-[3] bg-green-300">{children}</main>
+        <main className="flex-[5] bg-green-300">{children}</main>
 
-          <div className="flex-1 flex flex-col text-center min-w-[100%] min-h-[100%] bg-red-300">
-            <Footer />
-          </div>
+        <div className="flex-1 flex flex-col text-center min-w-[100%] min-h-[100%]">
+          <Footer />
         </div>
       </body>
     </html>

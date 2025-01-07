@@ -1,5 +1,5 @@
-import { ULProps } from "../data/CustomizeFooterLinkData";
-import ULBlock from "./ULBlock";
+import { ULProps } from "../../data/CustomizeFooterLinkData";
+import FooterLinkColumn from "./FooterLinkColumn";
 
 const linkGenerator = (data: any, Component: any) => {
   const newComponent = [];
@@ -11,8 +11,8 @@ const linkGenerator = (data: any, Component: any) => {
 
 export default function FooterLinks() {
   return (
-    <div className="flex flex-1 flex-row p-1 bg-red-300">
-      {linkGenerator(ULProps, ULBlock)}
+    <div className="flex flex-1 flex-row justify-center p-1">
+      {linkGenerator(ULProps, FooterLinkColumn)}
     </div>
   );
 }
