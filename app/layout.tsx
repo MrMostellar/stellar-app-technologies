@@ -6,16 +6,14 @@ export const metadata: Metadata = {
   description: "A company all about apps, tech solutions, and more.",
 };
 
-export default function RootLayout({
+export default function AboutLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

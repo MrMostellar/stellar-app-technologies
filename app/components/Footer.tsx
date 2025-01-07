@@ -1,5 +1,6 @@
 import ULBlock from "./ULBlock";
 import { ULProps } from "../data/CustomizeFooterData";
+import { error } from "console";
 
 const linkGenerator = (data: any, Component: any) => {
   const newComponent = [];
