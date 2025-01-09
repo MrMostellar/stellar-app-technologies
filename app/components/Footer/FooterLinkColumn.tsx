@@ -1,12 +1,13 @@
 import React, { ReactNode } from "react";
 import { ULBlockType } from "@/app/data/CustomizeFooterLinkData";
+import Link from "next/link";
 
 const LIGenerator = (props: ULBlockType) => {
   const newComponent: any = props.links.map((link, key) => (
     <li className={`${props.linkStyle}`} key={key}>
-      <a href={`${props.hrefs}`} key={key}>
+      <Link href={`${props.hrefs}`} key={key}>
         {link}
-      </a>
+      </Link>
     </li>
   ));
   return newComponent;

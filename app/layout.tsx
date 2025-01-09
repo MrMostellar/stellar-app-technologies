@@ -8,15 +8,15 @@ export const metadata: Metadata = {
   description: "A company all about apps, tech solutions, and more.",
 };
 
-export default function AboutLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col content-stretch min-h-[100vh] min-w-[100%] overflow-auto">
-        <div className="flex flex-1 flex-col min-w-[100%] min-h-[100%] bg-red-300">
+      <body className="flex flex-col min-h-[100vh] min-w-[100%] overflow-auto">
+        <div className="flex flex-1 flex-row min-w-[100%] min-h-[100%]">
           <Header />
         </div>
 
