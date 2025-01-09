@@ -1,8 +1,4 @@
-import React from "react";
-import {
-  SocialsBarData,
-  SocialsBarType,
-} from "../data/CustomizeSocialsBarData";
+import { SocialsBarData } from "../data/CustomizeSocialsBarData";
 import { generator } from "./UtilityFunctions/generatorFunction";
 import SocialsLinkIcon from "./SocialsLinkIcon";
 
