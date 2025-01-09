@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FaSearch } from "react-icons/fa";
 
-export default function Header(props: any) {
+export default function Header() {
   return (
     <>
       <div className="flex flex-1 justify-center items-center bg-red-500">

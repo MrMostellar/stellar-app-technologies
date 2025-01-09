@@ -1,4 +1,3 @@
-import { IconBase, IconContext } from "react-icons";
 import { SocialsBarType } from "../data/CustomizeSocialsBarData";
 import Link from "next/link";
 

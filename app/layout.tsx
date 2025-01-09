@@ -25,7 +25,6 @@ export default function RootLayout({
         <div className="flex-1 flex flex-col text-center min-w-[100%] min-h-[100%]">
           <Footer />
         </div>
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
       </body>
     </html>
   );
