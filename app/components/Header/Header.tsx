@@ -1,31 +1,22 @@
-import Link from "next/link";
-import React from "react";
 import { FaSearch } from "react-icons/fa";
+import NavBar from "./NavBar";
 
 export default function Header() {
   return (
     <>
-      <div className="flex flex-1 justify-center items-center bg-red-500">
-        <p className="text-xl bg-yellow-200">Stellar App Technologies</p>
-      </div>
+      <p className="flex flex-1 justify-center items-center text-xl bg-yellow-200">
+        Stellar App Technologies
+      </p>
 
-      <div className="flex flex-[2] bg-green-500">
-        <nav>
-          <ul>
-            <li>
-              <Link href={""}> Link </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav className="flex flex-[2] items-center justify-center bg-green-500">
+        <NavBar />
+      </nav>
 
-      <div className="flex flex-1 justify-center items-center bg-blue-500">
-        <nav>
-          <button>
-            <FaSearch />
-          </button>
-        </nav>
-      </div>
+      <nav className="flex flex-1 justify-center items-center bg-blue-500">
+        <button>
+          <FaSearch />
+        </button>
+      </nav>
     </>
   );
 }

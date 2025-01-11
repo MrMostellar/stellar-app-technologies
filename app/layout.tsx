@@ -16,15 +16,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-[100vh] min-w-[100%] overflow-auto">
-        <div className="flex flex-1 flex-row min-w-[100%] min-h-[100%]">
+        <header className="flex flex-1 flex-row min-w-[100%] min-h-[100%]">
           <Header />
-        </div>
+        </header>
 
         <main className="flex-[5] bg-green-300">{children}</main>
 
-        <div className="flex-1 flex flex-col text-center min-w-[100%] min-h-[100%]">
+        <footer className="flex-1 flex flex-col text-center min-w-[100%] min-h-[100%]">
           <Footer />
-        </div>
+        </footer>
       </body>
     </html>
   );
