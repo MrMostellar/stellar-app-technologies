@@ -1,13 +1,15 @@
 import { FaSearch } from "react-icons/fa";
 import NavBar from "./NavBar";
+import { siteTheme } from "@/app/data/SiteTheme";
 
-const sideNavStyles =
-  "flex flex-1 justify-center m-1 py-1 border-[0.0625rem] border-black rounded-[0.6rem] bg-blue-500";
+const sideNavStyles = `flex flex-1 justify-center m-1 py-1 border-[0.0625rem] border-black rounded-[0.6rem] ${siteTheme.buttonTheme}`;
 
 export default function Header() {
   return (
     <>
-      <p className="flex flex-1 justify-center items-center text-xl p-2">
+      <p
+        className={`flex flex-1 justify-center items-center text-xl p-2 ${siteTheme.textTheme}`}
+      >
         Stellar App Technologies
       </p>
 
@@ -17,13 +19,13 @@ export default function Header() {
 
       <nav className="flex flex-1 justify-center items-center p-2 pr-4">
         <button className="flex flex-1 justify-center m-1 py-2">
-          <FaSearch />
+          <FaSearch color={siteTheme.iconTheme} />
         </button>
         <button className={sideNavStyles}>
-          <p>Sign in</p>
+          <p className={siteTheme.buttonTextTheme}>Sign in</p>
         </button>
         <button className={sideNavStyles}>
-          <p>Sign up</p>
+          <p className={siteTheme.buttonTextTheme}>Sign up</p>
         </button>
       </nav>
     </>

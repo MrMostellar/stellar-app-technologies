@@ -1,5 +1,6 @@
 import { IconBaseProps } from "react-icons";
 import { FaFacebook, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { siteTheme } from "./SiteTheme";
 
 export interface SocialsBarType {
   id: number;
@@ -9,7 +10,7 @@ export interface SocialsBarType {
 
 const iconStyle: IconBaseProps = {
   size: "1.5rem",
-  color: "silver",
+  color: `${siteTheme.iconTheme}`,
 };
 
 export const SocialsBarData: SocialsBarType[] = [

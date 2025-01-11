@@ -1,4 +1,5 @@
 import { Url } from "next/dist/shared/lib/router/router";
+import { siteTheme } from "./SiteTheme";
 export interface ULBlockType {
   id: number;
   title: string;
@@ -9,8 +10,8 @@ export interface ULBlockType {
   hrefStyle: string;
 }
 
-const titleStyles: string = "p-1";
-const linkStyles: string = "p-1";
+const titleStyles: string = `p-1 ${siteTheme.textTheme}`;
+const linkStyles: string = `p-1 ${siteTheme.textTheme}`;
 const hrefStyles: string = "";
 
 export const ULProps: ULBlockType[] = [

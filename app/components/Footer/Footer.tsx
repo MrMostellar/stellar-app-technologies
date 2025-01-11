@@ -1,3 +1,4 @@
+import { siteTheme } from "@/app/data/SiteTheme";
 import SingleTextForm from "../SingleTextForm";
 import SocialsBar from "../SocialsBar";
 import FooterLinksColumns from "./FooterLinksColumns";
@@ -11,7 +12,6 @@ export default function Footer() {
         {/*Footer Links*/}
         <FooterLinksColumns />
       </div>
-      <hr className="flex w-[95%] m-auto border-black" />
       {/*bottom half of column is the email form, social media, and copywrite*/}
       <div className="flex flex-1 flex-col p-1">
         <div className="flex flex-1 justify-center items-center">
@@ -22,7 +22,9 @@ export default function Footer() {
           <SocialsBar />
         </div>
         {/*copyright line*/}
-        <p className="p-1">&copy; 2024-2025 Stellar App Technologies LLC</p>
+        <p className={`p-1 ${siteTheme.textTheme}`}>
+          &copy; 2024-2025 Stellar App Technologies LLC
+        </p>
       </div>
     </>
   );

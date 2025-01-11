@@ -1,4 +1,5 @@
 import { Url } from "next/dist/shared/lib/router/router";
+import { siteTheme } from "./SiteTheme";
 export interface Nav {
   id: number;
   title: string;
@@ -7,8 +8,7 @@ export interface Nav {
   //hrefStyle: string;
 }
 
-const navStyles: string =
-  "flex flex-1 items-center justify-center p-1 m-[0.6rem]";
+const navStyles: string = `flex flex-1 items-center justify-center p-1 m-[0.6rem] ${siteTheme.textTheme}`;
 //const hrefStyles: string = "";
 
 export const NavData: Nav[] = [
