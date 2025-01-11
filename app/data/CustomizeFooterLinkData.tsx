@@ -1,6 +1,4 @@
 import { Url } from "next/dist/shared/lib/router/router";
-import { ReactNode } from "react";
-
 export interface ULBlockType {
   id: number;
   title: string;
