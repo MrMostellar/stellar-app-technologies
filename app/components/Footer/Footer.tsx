@@ -1,13 +1,16 @@
-import FooterLinks from "./FooterLinks";
 import SingleTextForm from "../SingleTextForm";
 import SocialsBar from "../SocialsBar";
+import FooterLinksColumns from "./FooterLinksColumns";
 
 export default function Footer() {
   return (
     //column of two for the UL items and the copyright
     <>
       {/*top half of column is a row of columns*/}
-      <FooterLinks />
+      <div className="flex flex-1 pt-8">
+        {/*Footer Links*/}
+        <FooterLinksColumns />
+      </div>
       <hr className="flex w-[95%] m-auto border-black" />
       {/*bottom half of column is the email form, social media, and copywrite*/}
       <div className="flex flex-1 flex-col p-1">
@@ -19,7 +22,7 @@ export default function Footer() {
           <SocialsBar />
         </div>
         {/*copyright line*/}
-        <p>&copy; 2024-2025 Stellar App Technologies LLC</p>
+        <p className="p-1">&copy; 2024-2025 Stellar App Technologies LLC</p>
       </div>
     </>
   );

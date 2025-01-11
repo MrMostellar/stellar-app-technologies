@@ -1,7 +1,22 @@
-import { SocialsBarData } from "../data/CustomizeSocialsBarData";
-import { generator } from "./UtilityFunctions/generatorFunction";
+import {
+  SocialsBarData,
+  SocialsBarType,
+} from "../data/CustomizeSocialsBarData";
 import SocialsLinkIcon from "./SocialsLinkIcon";
 
 export default function SocialsBar() {
-  return <>{generator(SocialsBarData, SocialsLinkIcon)}</>;
+  return (
+    <>
+      {SocialsBarData.map((data, key) => {
+        return (
+          <SocialsLinkIcon
+            key={key}
+            id={key}
+            href={data.href}
+            icon={data.icon}
+          />
+        );
+      })}
+    </>
+  );
 }
