@@ -1,5 +1,4 @@
 export const siteTheme = {
-  headerTheme: "bg-transparent backdrop-blur-sm",
   footerTheme: "bg-[#31363F]",
   bodyTheme: "bg-[#31363F]",
   textTheme: "text-[#EEEEEE]",
