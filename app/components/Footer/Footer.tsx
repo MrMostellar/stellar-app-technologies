@@ -14,15 +14,15 @@ export default function Footer() {
       </div>
       {/*bottom half of column is the email form, social media, and copywrite*/}
       <div className="flex flex-1 flex-col p-1">
-        <div className="flex flex-1 justify-center items-center">
+        <div className="flex flex-1 justify-center items-center p-2">
           <SingleTextForm />
         </div>
         {/*Social Media links*/}
-        <div className="flex flex-1 flex-wrap justify-center items-center m-auto">
+        <div className="flex flex-1 flex-wrap justify-center items-center p-2 m-auto">
           <SocialsBar />
         </div>
         {/*copyright line*/}
-        <p className={`p-1 ${siteTheme.textTheme}`}>
+        <p className={`p-2 ${siteTheme.textTheme}`}>
           &copy; 2024-2025 Stellar App Technologies LLC
         </p>
       </div>
