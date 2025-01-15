@@ -5,9 +5,82 @@ export default function Home() {
   return (
     <>
       <section
-        className={`grid min-h-[100vh] grid-cols-12 grid-rows-12 gap-1 mt-32 ${siteTheme.heroBG}`}
+        className={`bg-[url(./data/galaxy.svg)] grid min-h-[100vh] grid-cols-12 grid-rows-12 gap-1 mt-32 ${siteTheme.heroBG}`}
       >
         <Hero />
+      </section>
+      <section
+        className={`flex flex-col items-center gap-3 p-6 text-[1rem] ${siteTheme.textTheme}`}
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          volutpat magna ultrices ullamcorper luctus. Praesent elit justo,
+          congue quis convallis et, mollis in ipsum. Cras commodo, massa sed
+          elementum bibendum, neque erat molestie sem, eu iaculis velit magna a
+          nisl. Quisque lectus eros, blandit ac felis vel, pulvinar finibus
+          sapien. Mauris eget quam a leo ornare vulputate. Ut quis commodo
+          massa, at rhoncus nisi. In consectetur, augue eu commodo porttitor,
+          neque leo lobortis ligula, ut condimentum risus velit porta sem. Morbi
+          ut velit facilisis, pretium eros a, eleifend urna. In accumsan aliquam
+          interdum.
+        </p>
+        <p>
+          Aliquam sit amet molestie mi, vitae convallis nisi. Ut ut ante
+          faucibus, semper orci a, vulputate lacus. Donec congue neque non nulla
+          malesuada lobortis. Nunc efficitur dolor neque, id auctor est luctus
+          in. Sed vel odio aliquam, euismod justo sed, interdum purus. Maecenas
+          ipsum ligula, tincidunt non ultrices sed, fringilla vitae libero.
+          Vestibulum magna mauris, lacinia non aliquet at, fermentum vitae quam.
+          Curabitur in vulputate risus. Sed in lectus sed leo viverra sagittis.
+          Suspendisse justo risus, tincidunt ac venenatis nec, dapibus ac dolor.
+          Aliquam feugiat pharetra nisl, egestas tempus lorem porttitor pretium.
+          Etiam augue ante, mattis at ante nec, bibendum ultricies arcu.
+        </p>
+        <p>
+          Pellentesque posuere elit in enim maximus ornare. Etiam bibendum
+          semper diam ut porttitor. Suspendisse vel ante tortor. Curabitur
+          luctus mattis mi vitae iaculis. Vestibulum velit nisi, molestie ac
+          pharetra et, pulvinar sit amet orci. Sed rhoncus pellentesque dui, ac
+          laoreet ex mollis ac. Integer vel quam eget dolor accumsan auctor.
+          Nunc ut mattis elit.
+        </p>
+        <p>
+          Ut blandit lectus massa, eu ullamcorper tellus cursus ut. Pellentesque
+          et ligula elit. Nulla gravida cursus auctor. Proin eu quam tortor.
+          Mauris eleifend commodo interdum. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae; Mauris
+          tincidunt nunc dolor, vel pellentesque enim eleifend pretium. Nam ac
+          nunc ut odio volutpat gravida nec a ex. Cras sed rutrum leo, aliquam
+          pretium sapien. Nulla facilisi. Pellentesque eu risus tempor lectus
+          maximus ullamcorper. Sed at semper urna, eget dictum dolor.
+          Suspendisse potenti. Maecenas in egestas metus. Cras ullamcorper porta
+          justo, dictum aliquet mi blandit id. In pellentesque mollis ante,
+          lobortis accumsan lacus.
+        </p>
+        <p>
+          Aenean ex mi, tempor id volutpat vel, fermentum cursus urna. Nulla
+          sodales ex a tempor cursus. Etiam nec bibendum lectus. Sed vitae
+          faucibus magna, et pellentesque ipsum. Duis dignissim massa luctus sem
+          convallis sodales. Proin in dignissim purus. Proin mattis sit amet dui
+          a blandit. Aenean sit amet urna in justo porta hendrerit. Quisque vel
+          ipsum non turpis cursus malesuada et in justo. Praesent dictum nunc
+          orci, imperdiet consectetur turpis iaculis a. Mauris tortor libero,
+          dignissim ultricies ligula vel, egestas dapibus dolor.
+        </p>
+        <p>
+          Donec eget eros at turpis imperdiet ornare. Sed malesuada ut quam nec
+          efficitur. Aenean sollicitudin, tortor ac aliquet condimentum, odio
+          sem facilisis lorem, vel lacinia lacus ligula id nulla. Vivamus nulla
+          enim, pharetra a ante vitae, imperdiet molestie ipsum. Vestibulum a
+          dolor hendrerit, pulvinar tortor a, dictum ligula. Phasellus venenatis
+          rutrum tempor. Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos. Morbi nec porttitor purus.
+          Praesent purus neque, mollis eu semper in, feugiat a dui. Duis
+          vestibulum ultricies nulla. Etiam id risus eu nunc ultrices tempor.
+          Sed non efficitur ex, nec egestas tellus. Proin ex ipsum, congue sed
+          vestibulum eu, volutpat ac dui. Donec metus tellus, tincidunt at justo
+          in, suscipit lobortis erat.
+        </p>
       </section>
     </>
   );

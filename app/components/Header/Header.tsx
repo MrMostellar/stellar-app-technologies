@@ -7,11 +7,11 @@ const sideNavStyles = `flex flex-1 justify-center m-1 py-1 border-[0.0625rem] bo
 export default function Header() {
   return (
     <>
-      <p
+      <button
         className={`flex flex-1 justify-center items-center text-xl p-2 ${siteTheme.textTheme}`}
       >
-        Stellar App Technologies
-      </p>
+        <p>Stellar App Technologies</p>
+      </button>
 
       <nav className="flex flex-[2] items-center justify-center p-2">
         <NavBar />

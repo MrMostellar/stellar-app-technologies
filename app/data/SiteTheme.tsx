@@ -1,5 +1,5 @@
 export const siteTheme = {
-  footerTheme: "bg-[#31363F]",
+  footerTheme: "bg-[#222831]",
   bodyTheme: "bg-[#31363F]",
   textTheme: "text-[#EEEEEE]",
   buttonTheme: "bg-[#EEEEEE]",

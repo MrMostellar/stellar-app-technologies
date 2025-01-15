@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { siteTheme } from "./data/SiteTheme";
+import { url } from "inspector";
 
 export const metadata: Metadata = {
   title: "Stellar App Technologies",
@@ -18,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col min-h-[100vh] min-w-[100%] overflow-auto">
         <header
-          className={`flex flex-1 flex-row fixed min-w-[100%] py-6 bg-transparent backdrop-blur-lg`}
+          className={`flex flex-1 flex-row fixed min-w-[100%] py-6 bg-gradient-to-b to-transparent from-[#222831] backdrop-blur-md`}
         >
           <Header />
         </header>
