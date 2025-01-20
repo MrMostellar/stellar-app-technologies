@@ -1,4 +1,3 @@
-import { siteTheme } from "@/app/data/SiteTheme";
 import SingleTextForm from "../SingleTextForm";
 import SocialsBar from "../SocialsBar";
 import FooterLinksColumns from "./FooterLinksColumns";
@@ -18,13 +17,11 @@ export default function Footer() {
           <SingleTextForm />
         </div>
         {/*Social Media links*/}
-        <div className="flex flex-1 flex-wrap justify-center items-center p-2 m-auto">
+        <div className="flex flex-1 flex-wrap justify-center items-center p-2 pt-4 m-auto">
           <SocialsBar />
         </div>
         {/*copyright line*/}
-        <p className={`p-2 ${siteTheme.textTheme}`}>
-          &copy; 2024-2025 Stellar App Technologies LLC
-        </p>
+        <p className="p-2">&copy; 2024-2025 Stellar App Technologies LLC</p>
       </div>
     </>
   );

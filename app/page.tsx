@@ -1,17 +1,13 @@
 import Hero from "./components/Hero";
-import { siteTheme } from "./data/SiteTheme";
 
 export default function Home() {
   return (
     <>
-      <section
-        className={`bg-[url(./data/galaxy.svg)] grid min-h-[100vh] grid-cols-12 grid-rows-12 gap-1 mt-32 ${siteTheme.heroBG}`}
-      >
+      <section className="text-[0.rem] z-1 bg-[url('/images/bgSpace1.jpg')] bg-no-repeat bg-cover pt-32 grid h-[101vh] min-w-[100%] grid-cols-24 grid-rows-24 gap-1">
         <Hero />
       </section>
-      <section
-        className={`flex flex-col items-center gap-3 p-6 text-[1rem] ${siteTheme.textTheme}`}
-      >
+      <section className="bg-[var(--secondary)] flex flex-col items-center p-16 gap-3 text-[1rem]">
+        <h1 className="pb-12 text-3xl">Lorem Ipsum</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           volutpat magna ultrices ullamcorper luctus. Praesent elit justo,

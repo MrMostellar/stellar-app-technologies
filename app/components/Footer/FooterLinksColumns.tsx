@@ -1,4 +1,4 @@
-import { ULProps } from "@/app/data/CustomizeFooterLinkData";
+import { ULProps } from "@/app/components/Footer/data/CustomizeFooterLinkData";
 import Link from "next/link";
 
 export default function FooterLinksColumns() {

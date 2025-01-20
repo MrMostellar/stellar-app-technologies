@@ -1,4 +1,4 @@
-import { SocialsBarType } from "../data/CustomizeSocialsBarData";
+import { SocialsBarType } from "./data/CustomizeSocialsBarData";
 import Link from "next/link";
 
 export default function SocialsLinkIcon(props: SocialsBarType) {

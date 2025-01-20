@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import { siteTheme } from "./data/SiteTheme";
 import { url } from "inspector";
 
 export const metadata: Metadata = {
@@ -17,16 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-[100vh] min-w-[100%] overflow-auto">
-        <header
-          className={`flex flex-1 flex-row fixed min-w-[100%] py-6 bg-gradient-to-b to-transparent from-[#222831] backdrop-blur-md`}
-        >
+      <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body className="text-[var(--text)] flex flex-col min-h-[100vh] min-w-[100%] overflow-auto">
+        <header className="z-10 absolute top-0 flex flex-1 flex-row min-w-[100%] py-6 px-2">
           <Header />
         </header>
-        <main className={`flex-[5] ${siteTheme.bodyTheme}`}>{children}</main>
-        <footer
-          className={`flex-1 flex flex-col text-center ${siteTheme.footerTheme}`}
-        >
+        <main className="flex-[5]">{children}</main>
+        <footer className="bg-[var(--primary)] flex-1 flex flex-col text-center">
           <Footer />
         </footer>
       </body>

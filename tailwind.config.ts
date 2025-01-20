@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "oklch(27.49% 0.0188 258.37)",
         foreground: "var(--foreground)",
       },
     },

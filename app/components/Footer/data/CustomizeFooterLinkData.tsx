@@ -10,8 +10,8 @@ export interface ULBlockType {
   hrefStyle: string;
 }
 
-const titleStyles: string = `p-1 ${siteTheme.textTheme}`;
-const linkStyles: string = `p-1 ${siteTheme.textTheme}`;
+const titleStyles: string = `p-1`;
+const linkStyles: string = `p-1`;
 const hrefStyles: string = "";
 
 export const ULProps: ULBlockType[] = [

@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --primary: #31363F;
+    --primaryTransparent: #31363fbb;
+    --secondary: #222831;
+    --secondaryTransparent: #222831bb;
+    --text: #EEEEEE;
+    --complimentary: #76ABAE;
+    --complimentaryTransparent: #76ABAEbb;
+}
+
+.darkButton{
+    background-color: var(--primary);
+    border: 0.0625rem solid transparent;
+    border-radius: 0.6rem;
+    padding: 0.125rem;
+}

@@ -1,4 +1,4 @@
-import { NavData } from "@/app/data/CustomizeNavData";
+import { NavData } from "@/app/components/Header/data/CustomizeNavData";
 import Link from "next/link";
 
 export default function NavBar() {

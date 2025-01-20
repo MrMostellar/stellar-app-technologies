@@ -10,7 +10,7 @@ export interface SocialsBarType {
 
 const iconStyle: IconBaseProps = {
   size: "1.5rem",
-  color: `${siteTheme.iconTheme}`,
+  color: "var(--text)",
 };
 
 export const SocialsBarData: SocialsBarType[] = [
