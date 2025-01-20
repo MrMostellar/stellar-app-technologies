@@ -7,7 +7,8 @@ export interface Nav {
   navStyle: string;
 }
 
-const navStyles: string = "flex flex-1 items-center justify-center m-[0.6rem]";
+const navStyles: string =
+  "navText flex flex-1 items-center justify-center m-[0.6rem]";
 
 export const NavData: Nav[] = [
   {

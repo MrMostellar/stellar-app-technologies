@@ -1,20 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root{
-    --primary: #31363F;
-    --primaryTransparent: #31363fbb;
-    --secondary: #222831;
-    --secondaryTransparent: #222831bb;
-    --text: #EEEEEE;
-    --complimentary: #76ABAE;
-    --complimentaryTransparent: #76ABAEbb;
+    --primary: #0e0e11;
+    --primaryTransparent: #0e0e11bb;
+    --secondary: #31313b;
+    --secondaryTransparent: #31313bbb;
+    --text: #d8d8d8;
+    --complimentary: #009da5;
+    --complimentaryTransparent: #009da5bb;
 }
 
-.darkButton{
-    background-color: var(--primary);
-    border: 0.0625rem solid transparent;
+.button{
+    background-color: var(--complimentary);
+    border-color: var(--secondary);
+    box-shadow: 0.1rem 0.1rem 0.25rem var(--primaryTransparent);
+    border: 0.0625rem;
     border-radius: 0.6rem;
     padding: 0.125rem;
+}
+
+.titleText{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.linkTitleText{
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.linkText {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.navText {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.subTitleText {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.paragraphText {
+    font-weight: 300;
+    font-size: 1.1rem;
 }

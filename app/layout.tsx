@@ -19,12 +19,12 @@ export default function RootLayout({
       <head>
         <script src="https://cdn.tailwindcss.com"></script>
       </head>
-      <body className="text-[var(--text)] flex flex-col min-h-[100vh] min-w-[100%] overflow-auto">
+      <body className="font-main text-[var(--text)] flex flex-col min-h-[100vh] min-w-[100%] overflow-auto">
         <header className="z-10 absolute top-0 flex flex-1 flex-row min-w-[100%] py-6 px-2">
           <Header />
         </header>
-        <main className="flex-[5]">{children}</main>
-        <footer className="bg-[var(--primary)] flex-1 flex flex-col text-center">
+        <main className="flex-[5] bg-[var(--primary)]">{children}</main>
+        <footer className="bg-[var(--secondary)] flex-1 flex flex-col text-center">
           <Footer />
         </footer>
       </body>

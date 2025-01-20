@@ -3,12 +3,12 @@ import Hero from "./components/Hero";
 export default function Home() {
   return (
     <>
-      <section className="text-[0.rem] z-1 bg-[url('/images/bgSpace1.jpg')] bg-no-repeat bg-cover pt-32 grid h-[101vh] min-w-[100%] grid-cols-24 grid-rows-24 gap-1">
+      <section className="text-[0.rem] z-1 bg-[url('/images/bgSpace1.jpg')] bg-no-repeat bg-cover pt-32 grid min-h-[101vh] min-w-[100%] grid-cols-24 grid-rows-24 gap-1">
         <Hero />
       </section>
-      <section className="bg-[var(--secondary)] flex flex-col items-center p-16 gap-3 text-[1rem]">
-        <h1 className="pb-12 text-3xl">Lorem Ipsum</h1>
-        <p>
+      <section className="m-12 pb-10 py-2 px-6 rounded-3xl flex flex-col items-center gap-3 text-[1rem]">
+        <h1 className="titleText pb-12 text-3xl">Lorem Ipsum</h1>
+        <p className="paragraphText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           volutpat magna ultrices ullamcorper luctus. Praesent elit justo,
           congue quis convallis et, mollis in ipsum. Cras commodo, massa sed
@@ -20,7 +20,7 @@ export default function Home() {
           ut velit facilisis, pretium eros a, eleifend urna. In accumsan aliquam
           interdum.
         </p>
-        <p>
+        <p className="paragraphText">
           Aliquam sit amet molestie mi, vitae convallis nisi. Ut ut ante
           faucibus, semper orci a, vulputate lacus. Donec congue neque non nulla
           malesuada lobortis. Nunc efficitur dolor neque, id auctor est luctus
@@ -32,7 +32,7 @@ export default function Home() {
           Aliquam feugiat pharetra nisl, egestas tempus lorem porttitor pretium.
           Etiam augue ante, mattis at ante nec, bibendum ultricies arcu.
         </p>
-        <p>
+        <p className="paragraphText">
           Pellentesque posuere elit in enim maximus ornare. Etiam bibendum
           semper diam ut porttitor. Suspendisse vel ante tortor. Curabitur
           luctus mattis mi vitae iaculis. Vestibulum velit nisi, molestie ac
@@ -40,7 +40,7 @@ export default function Home() {
           laoreet ex mollis ac. Integer vel quam eget dolor accumsan auctor.
           Nunc ut mattis elit.
         </p>
-        <p>
+        <p className="paragraphText">
           Ut blandit lectus massa, eu ullamcorper tellus cursus ut. Pellentesque
           et ligula elit. Nulla gravida cursus auctor. Proin eu quam tortor.
           Mauris eleifend commodo interdum. Vestibulum ante ipsum primis in
@@ -53,7 +53,7 @@ export default function Home() {
           justo, dictum aliquet mi blandit id. In pellentesque mollis ante,
           lobortis accumsan lacus.
         </p>
-        <p>
+        <p className="paragraphText">
           Aenean ex mi, tempor id volutpat vel, fermentum cursus urna. Nulla
           sodales ex a tempor cursus. Etiam nec bibendum lectus. Sed vitae
           faucibus magna, et pellentesque ipsum. Duis dignissim massa luctus sem
@@ -63,7 +63,7 @@ export default function Home() {
           orci, imperdiet consectetur turpis iaculis a. Mauris tortor libero,
           dignissim ultricies ligula vel, egestas dapibus dolor.
         </p>
-        <p>
+        <p className="paragraphText">
           Donec eget eros at turpis imperdiet ornare. Sed malesuada ut quam nec
           efficitur. Aenean sollicitudin, tortor ac aliquet condimentum, odio
           sem facilisis lorem, vel lacinia lacus ligula id nulla. Vivamus nulla

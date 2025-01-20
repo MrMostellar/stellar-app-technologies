@@ -21,7 +21,9 @@ export default function Footer() {
           <SocialsBar />
         </div>
         {/*copyright line*/}
-        <p className="p-2">&copy; 2024-2025 Stellar App Technologies LLC</p>
+        <p className="paragraphText p-2">
+          &copy; 2024-2025 Stellar App Technologies LLC
+        </p>
       </div>
     </>
   );

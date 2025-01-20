@@ -8,9 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        main: ["Josefin Sans", "serif"],
+      },
       colors: {
-        background: "oklch(27.49% 0.0188 258.37)",
-        foreground: "var(--foreground)",
       },
     },
   },
