@@ -1,26 +1,31 @@
-import { FaSearch } from "react-icons/fa";
+import { FaBars, FaSearch } from "react-icons/fa";
 import NavBar from "./NavBar";
 
 export default function Header() {
   return (
     <>
-      <button className="flex flex-1 justify-center items-center p-2">
+      <button className="flex flex-[1.25] justify-center items-center p-2">
         <p className="titleText">Stellar App Technologies</p>
       </button>
 
-      <nav className="flex flex-[2] items-center justify-center p-4 mx-2">
-        <NavBar />
-      </nav>
+      <div className="items-center justify-center xs:hidden lg:flex lg:flex-[2]">
+        <nav className="flex flex-1 max-w-[60%]">
+          <NavBar />
+        </nav>
+      </div>
 
-      <nav className="flex flex-1 justify-center items-center p-2 pr-4">
-        <button className="flex flex-1 justify-center m-1 py-2">
-          <FaSearch color="var(--text)" />
+      <nav className="flex xs:flex-[0.25] lg:flex-1">
+        <button className="justify-center items-center flex xs:flex-1 lg:flex-[0.5]">
+          <FaSearch size="1.25rem" color="var(--text)" />
         </button>
-        <button className="flex-1 mr-2 button">
+        <button className="xs:hidden lg:flex lg:flex-1 lg:max-w-[7vw] my-4 py-1 justify-center items-center mx-2 button">
           <p className="navText">Sign in</p>
         </button>
-        <button className="flex-1 button">
+        <button className="xs:hidden lg:flex lg:flex-1 lg:max-w-[7vw] my-4 py-1 justify-center items-center mx-2 button">
           <p className="navText">Sign up</p>
+        </button>
+        <button className="flex flex-1 justify-center items-center lg:hidden">
+          <FaBars size="1.25rem" color="var(--text)" />
         </button>
       </nav>
     </>
