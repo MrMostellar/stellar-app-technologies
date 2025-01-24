@@ -15,9 +15,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script src="https://cdn.tailwindcss.com"></script>
-      </head>
       <body className="font-main text-[var(--text)] flex flex-col min-h-[100vh] overflow-y-auto">
         <header className="z-10 absolute top-0 flex flex-1 flex-row w-[100%] py-6 px-2">
           <Header />
