@@ -10,7 +10,6 @@ export default {
     extend: {
       screens: {
         xs: '300px',
-        tiny: '100px'
       },
       fontFamily: {
         main: ["Josefin Sans", "serif"],

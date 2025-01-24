@@ -17,7 +17,7 @@ export default function Footer() {
           <SingleTextForm />
         </div>
         {/*Social Media links*/}
-        <div className="flex flex-1 flex-wrap justify-center items-center p-2 pt-4 m-auto">
+        <div className="underline-animation flex flex-1 flex-wrap justify-center items-center p-2 pt-4 m-auto">
           <SocialsBar />
         </div>
         {/*copyright line*/}
