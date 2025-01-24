@@ -1,6 +1,5 @@
 import { IconBaseProps } from "react-icons";
 import { FaFacebook, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { siteTheme } from "./SiteTheme";
 
 export interface SocialsBarType {
   id: number;

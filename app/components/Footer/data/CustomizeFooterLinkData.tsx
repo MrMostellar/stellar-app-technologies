@@ -1,5 +1,4 @@
 import { Url } from "next/dist/shared/lib/router/router";
-import { siteTheme } from "./SiteTheme";
 export interface ULBlockType {
   id: number;
   title: string;
