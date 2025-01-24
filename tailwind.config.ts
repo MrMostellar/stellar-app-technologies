@@ -8,9 +8,13 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '300px',
+      },
+      fontFamily: {
+        main: ["Josefin Sans", "serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
       },
     },
   },

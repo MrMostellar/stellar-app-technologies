@@ -1,15 +1,14 @@
 import { Url } from "next/dist/shared/lib/router/router";
-import { siteTheme } from "./SiteTheme";
+
 export interface Nav {
   id: number;
   title: string;
   href: Url;
   navStyle: string;
-  //hrefStyle: string;
 }
 
-const navStyles: string = `flex flex-1 items-center justify-center p-1 m-[0.6rem] ${siteTheme.textTheme}`;
-//const hrefStyles: string = "";
+const navStyles: string =
+  "px-2 text-nowrap navText flex flex-1 items-center justify-center";
 
 export const NavData: Nav[] = [
   {
@@ -17,27 +16,23 @@ export const NavData: Nav[] = [
     title: "Route 1",
     href: "",
     navStyle: navStyles,
-    //hrefStyle: hrefStyles,
   },
   {
     id: 1,
     title: "Route 2",
     href: "",
     navStyle: navStyles,
-    //hrefStyle: hrefStyles,
   },
   {
     id: 2,
     title: "Route 3",
     href: "",
     navStyle: navStyles,
-    //hrefStyle: hrefStyles,
   },
   {
     id: 3,
     title: "Route 4",
     href: "",
     navStyle: navStyles,
-    //hrefStyle: hrefStyles,
   },
 ];

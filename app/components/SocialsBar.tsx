@@ -1,4 +1,4 @@
-import { SocialsBarData } from "../data/CustomizeSocialsBarData";
+import { SocialsBarData } from "./data/CustomizeSocialsBarData";
 import SocialsLinkIcon from "./SocialsLinkIcon";
 
 export default function SocialsBar() {

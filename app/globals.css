@@ -1,21 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+    --primary: #0e0e11;
+    --primaryTransparent: #0e0e11bb;
+    --secondary: #31313b;
+    --secondaryTransparent: #31313bbb;
+    --text: #d8d8d8;
+    --complimentary: #009da5;
+    --complimentaryTransparent: #009da5bb;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.button{
+    background-color: var(--complimentary);
+    border-color: var(--secondary);
+    box-shadow: 0.1rem 0.1rem 0.25rem var(--primaryTransparent);
+    border: 0.0625rem;
+    border-radius: 0.6rem;
+    padding: 0.125rem;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.titleText{
+    font-weight: 600;
+    font-size: 1.5rem;
 }
+
+.linkTitleText{
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.linkText {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.navText {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.subTitleText {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.paragraphText {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+a{
+    position: relative;
+    padding: 1px;
+}
+
+nav > a::after{
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    content: '';
+    background: var(--complimentary);
+    position: absolute;
+    transition: width .3s;
+}
+
+nav > a:hover:after{
+    width: 100%;
+}
+
