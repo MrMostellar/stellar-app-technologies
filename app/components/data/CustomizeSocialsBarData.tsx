@@ -34,6 +34,6 @@ export const SocialsBarData: SocialsBarType[] = [
   {
     id: 3,
     icon: <FaGithub size={iconStyle.size} color={iconStyle.color} />,
-    href: "",
+    href: "https://github.com/MrMostellar",
   },
 ];
