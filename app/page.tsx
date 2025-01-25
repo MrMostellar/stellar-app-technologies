@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 export default function Home() {
   return (
     <>
-      <section className="text-[0.rem] px-40 z-1 bg-[url('/images/bgSpace1.jpg')] bg-no-repeat bg-cover pt-32 grid min-h-[101vh] min-w-[100%] grid-cols-12 grid-rows-6 md:grid-cols-24 md:grid-rows-24 gap-1">
+      <section className="text-[0.rem] px-10 md:px-40 z-1 bg-[url('/images/bgSpace1.jpg')] bg-no-repeat bg-cover pt-32 grid min-h-[101vh] min-w-[100%] grid-cols-12 grid-rows-6 md:grid-cols-24 md:grid-rows-24 gap-1">
         <Hero />
       </section>
       <section className="m-12 pb-10 py-2 px-6 rounded-3xl flex flex-col items-center gap-3 text-[1rem]">
