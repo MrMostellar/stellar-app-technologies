@@ -57,7 +57,48 @@ a{
     padding: 1px;
 }
 
+nav > a::before {
+    height: 2px;
+    right: 4px;
+    top: 0;
+    width: 0;
+    content: '';
+    background: var(--complimentary);
+    position: absolute;
+    transition: width .3s;
+}
+
 nav > a::after{
+    height: 2px;
+    left: 4px;
+    bottom: 0;
+    width: 0;
+    content: '';
+    background: var(--complimentary);
+    position: absolute;
+    transition: width .3s;
+}
+
+nav > a:hover:before {
+    width: 100%;
+}
+
+nav > a:hover:after{
+    width: 100%;
+}
+
+button > a::before {
+    height: 2px;
+    right: 10px;
+    top: 0;
+    width: 0;
+    content: '';
+    background: var(--complimentary);
+    position: absolute;
+    transition: width .3s;
+}
+
+button > a::after{
     height: 2px;
     left: 10px;
     bottom: 0;
@@ -68,7 +109,10 @@ nav > a::after{
     transition: width .3s;
 }
 
-nav > a:hover:after{
-    width: 80%;
+button > a:hover:before {
+    width: 100%;
 }
 
+button > a:hover:after{
+    width: 100%;
+}

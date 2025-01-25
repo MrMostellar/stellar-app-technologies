@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function page() {
+export default function AboutPage() {
   return (
-    <div className="flex-[3] bg-green-300">
-      <h1>Body</h1>
-    </div>
+    <section className="flex-[3] justify-center items-center translate-y-">
+      <h1>About</h1>
+    </section>
   );
 }

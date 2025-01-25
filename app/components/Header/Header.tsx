@@ -1,15 +1,18 @@
 import { FaBars, FaSearch } from "react-icons/fa";
 import NavBar from "./NavBar";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <>
       <button className="flex flex-[1.25] justify-center items-center p-2">
-        <p className="titleText">Stellar App Technologies</p>
+        <Link href="/" className="titleText">
+          Stellar App Technologies
+        </Link>
       </button>
 
       <div className="items-center justify-center xs:hidden lg:flex lg:flex-[2]">
-        <nav className="flex flex-1 max-w-[60%]">
+        <nav className="flex flex-1 -translate-x-16 max-w-[60%]">
           <NavBar />
         </nav>
       </div>

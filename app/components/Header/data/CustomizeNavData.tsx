@@ -8,31 +8,31 @@ export interface Nav {
 }
 
 const navStyles: string =
-  "px-2 text-nowrap navText flex flex-1 items-center justify-center";
+  "px-2 mx-2 text-nowrap navText flex flex-1 items-center justify-center";
 
 export const NavData: Nav[] = [
   {
     id: 0,
-    title: "Route 1",
-    href: "",
+    title: "Solutions",
+    href: "../../pages/solutions",
     navStyle: navStyles,
   },
   {
     id: 1,
-    title: "Route 2",
-    href: "",
+    title: "About",
+    href: "../../pages/about",
     navStyle: navStyles,
   },
   {
     id: 2,
-    title: "Route 3",
-    href: "",
+    title: "Contact Us",
+    href: "../../pages/contact",
     navStyle: navStyles,
   },
   {
     id: 3,
-    title: "Route 4",
-    href: "",
+    title: "Portfolio",
+    href: "../../pages/portfolio",
     navStyle: navStyles,
   },
 ];
