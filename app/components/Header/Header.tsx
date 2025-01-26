@@ -1,6 +1,7 @@
 import { FaBars, FaSearch } from "react-icons/fa";
 import NavBar from "./NavBar";
 import Link from "next/link";
+import SearchModal from "../SearchModal";
 
 export default function Header() {
   return (
@@ -18,9 +19,7 @@ export default function Header() {
       </div>
 
       <nav className="flex pr-4 xs:flex-[0.25] lg:flex-1 lg:pr-6">
-        <button className="justify-center items-center flex xs:flex-1 lg:flex-[0.5]">
-          <FaSearch size="1.25rem" color="var(--text)" />
-        </button>
+        <SearchModal />
         <button className="xs:hidden lg:flex lg:flex-1 lg:max-w-[7vw] my-4 py-1 justify-center items-center mx-2 button">
           <p className="navText">Sign in</p>
         </button>
