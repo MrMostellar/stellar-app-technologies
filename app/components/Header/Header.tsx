@@ -1,4 +1,4 @@
-import { FaBars, FaSearch } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import NavBar from "./NavBar";
 import Link from "next/link";
 import SearchModal from "../SearchModal";
