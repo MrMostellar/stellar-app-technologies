@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="font-main text-[var(--text)] flex flex-col min-h-[100vh] overflow-y-auto">
+      <body className="overflow-x-clip font-main text-[var(--text)] flex flex-col min-h-[100vh] overflow-y-auto">
         <header className="z-10 absolute top-2 flex flex-1 flex-row w-[100%] py-6 px-2">
           <Header />
         </header>

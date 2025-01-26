@@ -26,7 +26,7 @@ export default function SearchModal() {
       {isModalActive ? (
         <section
           onKeyDown={handleKeyDown}
-          className="absolute overflow-hidden content-top lg:translate-x-[-75%] translate-x-[-80%] p-10 bg-transparent/90 min-w-[102%] min-h-[100vh]"
+          className="absolute overflow-x-hidden content-top xl:translate-x-[-75%] lg:translate-x-[-74.5%] translate-x-[-80%] p-10 bg-transparent/90 min-w-[100vw] min-h-[100vh]"
         >
           <div className="flex justify-end">
             <button onClick={escapeHandle}>
