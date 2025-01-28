@@ -30,7 +30,7 @@ export default function Header() {
           <button className="flex-col block">
             <FaBars size="1.25rem" color="var(--text)" />
           </button>
-          <nav className="flex-col absolute translate-y-14 p-2 hidden bg-[var(--primary)]">
+          <nav className="flex-col absolute translate-y-14 p-2 hidden ">
             <NavBar />
           </nav>
         </div>
