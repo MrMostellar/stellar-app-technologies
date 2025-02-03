@@ -3,13 +3,13 @@ import Hero from "./components/Hero";
 export default function Home() {
   return (
     <>
-      <section className="snap-center snap-always relative pt-32 z-10 text-[0.5rem] px-10 md:px-40 bg-[url('/images/bgSpace1.jpg')] bg-no-repeat bg-cover grid min-h-screen min-w-screen grid-cols-12 grid-rows-6 md:grid-cols-10 md:grid-rows-10 gap-1">
+      <section className="relative pt-32 z-10 text-[0.5rem] px-10 md:px-40 bg-[url('/images/bgSpace1.jpg')] bg-no-repeat bg-cover grid min-h-screen min-w-screen grid-cols-12 grid-rows-6 md:grid-cols-10 md:grid-rows-10 gap-1">
         <Hero />
       </section>
-      <section className="snap-center snap-always min-h-screen p-20 lg:px-52 rounded-3xl flex flex-col items-center gap-3 text-[1rem]">
+      <section className="min-h-screen p-20 lg:px-52 rounded-3xl flex flex-col items-center justify-center gap-3 text-[1rem]">
         <p>insert content here, a carousel perhaps?</p>
       </section>
-      <section className="snap-center snap-always min-h-screen p-20 bg-[var(--secondary)] lg:px-52 flex flex-col items-center gap-3 text-[1rem]">
+      <section className="min-h-screen p-20 bg-[url('/images/bgSpace.jpg')] lg:px-52 flex flex-col items-center justify-center gap-3 text-[1rem]">
         <h1 className="titleText pb-12 text-3xl">Why Work With Us?</h1>
         <p className="paragraphText">
           Aenean ex mi, tempor id volutpat vel, fermentum cursus urna. Nulla
@@ -36,7 +36,7 @@ export default function Home() {
           in, suscipit lobortis erat.
         </p>
       </section>
-      <section className="snap-center snap-always min-h-screen p-20 lg:px-52 rounded-3xl flex flex-col items-center gap-3 text-[1rem]">
+      <section className="min-h-screen p-20 lg:px-52 rounded-3xl flex flex-col items-center justify-center gap-3 text-[1rem]">
         <h1 className="titleText pb-12 text-3xl">Custom solutions</h1>
         <p className="paragraphText">
           Aenean ex mi, tempor id volutpat vel, fermentum cursus urna. Nulla

@@ -13,24 +13,18 @@ const navStyles: string =
 export const NavData: Nav[] = [
   {
     id: 0,
-    title: "Solutions",
-    href: "../../pages/solutions",
-    navStyle: navStyles,
-  },
-  {
-    id: 1,
     title: "About",
     href: "../../pages/about",
     navStyle: navStyles,
   },
   {
-    id: 2,
+    id: 1,
     title: "Contact Us",
     href: "../../pages/contact",
     navStyle: navStyles,
   },
   {
-    id: 3,
+    id: 2,
     title: "Portfolio",
     href: "../../pages/portfolio",
     navStyle: navStyles,
