@@ -17,11 +17,15 @@ export const ULProps: ULBlockType[] = [
   {
     id: 0,
 
-    title: "Service",
+    title: "Company",
 
-    links: ["link 1", "link 2", "link 3", "link 4", "link 5"],
+    links: ["About", "Contact", "Portfolio"],
 
-    hrefs: ["", "", "", "", ""],
+    hrefs: [
+      "../../pages/about",
+      "../../pages/contact",
+      "../../pages/portfolio",
+    ],
 
     linkStyle: linkStyles,
 
@@ -29,31 +33,14 @@ export const ULProps: ULBlockType[] = [
 
     hrefStyle: hrefStyles,
   },
-
   {
     id: 1,
 
-    title: "Support",
+    title: "Policies",
 
-    links: ["link 1", "link 2", "link 3", "link 4"],
+    links: ["Privacy Policy"],
 
-    hrefs: ["", "", "", ""],
-
-    linkStyle: linkStyles,
-
-    titleStyle: titleStyles,
-
-    hrefStyle: hrefStyles,
-  },
-
-  {
-    id: 2,
-
-    title: "Company",
-
-    links: ["link 1", "link 2"],
-
-    hrefs: ["", ""],
+    hrefs: ["../../pages/privacy-policy"],
 
     linkStyle: linkStyles,
 

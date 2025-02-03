@@ -4,14 +4,11 @@ import FooterLinksColumns from "./FooterLinksColumns";
 
 export default function Footer() {
   return (
-    //column of two for the UL items and the copyright
     <>
-      {/*top half of column is a row of columns*/}
       <div className="flex flex-1 pt-8">
-        {/*Footer Links*/}
         <FooterLinksColumns />
       </div>
-      {/*bottom half of column is the email form, social media, and copywrite*/}
+
       <div className="flex flex-1 flex-col p-1">
         <div className="flex flex-1 justify-center items-center p-2">
           <SingleTextForm
@@ -20,11 +17,11 @@ export default function Footer() {
             placeholder={"Enter your Email"}
           />
         </div>
-        {/*Social Media links*/}
+
         <div className="underline-animation flex flex-1 flex-wrap justify-center items-center p-2 pt-4 m-auto">
           <SocialsBar />
         </div>
-        {/*copyright line*/}
+
         <p className="paragraphText p-2">
           &copy; 2024-2025 Stellar App Technologies LLC
         </p>
