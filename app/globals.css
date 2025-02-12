@@ -79,12 +79,9 @@ nav > a::after{
     transition: width .3s;
 }
 
-nav > a:hover:before {
+nav > a:hover:before, a:hover:after {
     width: 100%;
-}
-
-nav > a:hover:after{
-    width: 100%;
+    transition: .5s;
 }
 
 button > a::before {
@@ -95,7 +92,7 @@ button > a::before {
     content: '';
     background: var(--complimentary);
     position: absolute;
-    transition: width .3s;
+    transition: width .5s;
 }
 
 button > a::after{
@@ -106,13 +103,25 @@ button > a::after{
     content: '';
     background: var(--complimentary);
     position: absolute;
-    transition: width .3s;
+    transition: width .5s;
 }
 
-button > a:hover:before {
+button > a:hover:before, a:hover:after {
     width: 100%;
 }
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
-button > a:hover:after{
-    width: 100%;
+.in-view{
+    animation: appear 1s;
+}
+
+.not-in-view{
+    opacity: 0;
 }
