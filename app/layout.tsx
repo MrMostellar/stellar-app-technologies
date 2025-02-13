@@ -5,7 +5,8 @@ import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Stellar App Technologies",
-  description: "A company all about apps, tech solutions, and more.",
+  description:
+    "A web development company all about webapps, tech solutions, and more.",
 };
 
 export default function RootLayout({
