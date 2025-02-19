@@ -5,14 +5,14 @@ import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function Carousel() {
-  let [currentIndex, setCurrentIndex] = useState<number>(0);
-  let [isHovered, setIsHovered] = useState<boolean>(false);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   function prev() {
     if (currentIndex === 0) {
       setCurrentIndex(carouselData.length - 1);
     } else {
-      setCurrentIndex(--currentIndex);
+      setCurrentIndex(currentIndex - 1);
     }
   }
 
@@ -20,7 +20,7 @@ export default function Carousel() {
     if (currentIndex === carouselData.length - 1) {
       setCurrentIndex(0);
     } else {
-      setCurrentIndex(++currentIndex);
+      setCurrentIndex(currentIndex + 1);
     }
   }
 
@@ -28,7 +28,7 @@ export default function Carousel() {
     if (!isHovered) {
       const interval = setInterval(() => {
         next();
-      }, 3000);
+      }, 5000);
       return () => clearInterval(interval);
     }
   }, [currentIndex, isHovered]);
