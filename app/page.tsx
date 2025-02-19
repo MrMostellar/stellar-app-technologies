@@ -1,5 +1,5 @@
 import AnimationOnScroll from "./components/AnimationOnScroll";
-import CarouselGenerator from "./components/Carousel/CarouselGenerator";
+import Carousel from "./components/Carousel/Carousel";
 import Hero from "./components/Hero";
 
 export default function Home() {
@@ -13,9 +13,7 @@ export default function Home() {
         classNameNotInView="not-in-view"
       >
         <section className="min-h-screen p-20 lg:px-52 rounded-3xl flex flex-col items-center justify-center gap-3 text-[1rem]">
-          <div className="rounded-3xl bg-[var(--secondary)] min-h-[50vh] min-w-[80vw] items-center justify-evenly flex flex-1">
-            <CarouselGenerator />
-          </div>
+          <Carousel />
         </section>
       </AnimationOnScroll>
       <AnimationOnScroll
