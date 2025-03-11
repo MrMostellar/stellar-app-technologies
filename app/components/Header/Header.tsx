@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <>
+    <header className="absolute top-2 z-20 flex w-[100%] flex-row px-2 py-6">
       <button className="flex flex-1 items-center justify-center p-2">
         <Link href="/" className="titleText flex items-center">
           <Image
@@ -35,6 +35,6 @@ export default function Header() {
           </nav>
         </div>
       </nav>
-    </>
+    </header>
   );
 }

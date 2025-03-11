@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Stellar App Technologies",
   description:
-    "A web development company all about webapps, tech solutions, and more.",
+    "A web development company focusing on building you a website you love.",
 };
 
 export default function RootLayout({
@@ -17,16 +18,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-9P394L0GFY"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9P394L0GFY');
+  `}
+        </Script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="overflow-y-scroll min-h-screen font-main text-[var(--text)] flex flex-col">
-        <header className="z-20 absolute top-2 flex flex-1 flex-row w-[100%] py-6 px-2">
-          <Header />
-        </header>
-        <main className="flex-[5] bg-[var(--primary)]">{children}</main>
-        <footer className="bg-[var(--secondary)] flex-1 flex flex-col text-center">
-          <Footer />
-        </footer>
+
+      <body className="overflow-y-scroll font-main text-[var(--text)]">
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
