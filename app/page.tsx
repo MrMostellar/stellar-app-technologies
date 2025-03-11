@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <main className="bg-[var(--primary)]" onScroll={() => scrollBy(screen)}>
+    <main className="bg-[var(--primary)]">
       <section className="min-w-screen relative z-10 grid min-h-screen grid-cols-12 grid-rows-6 gap-1 bg-[url('/images/bgSpace1.jpg')] bg-cover bg-no-repeat px-10 pt-32 text-[0.5rem] md:grid-cols-10 md:grid-rows-10 md:px-40">
         <Hero />
       </section>
